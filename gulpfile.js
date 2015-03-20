@@ -14,7 +14,7 @@ gulp.task('scripts', function() {
 		.pipe(plugins.concat('main.js'))
 		.pipe(plugins.rename({suffix: '.min'}))
 		.pipe(plugins.uglify()).on('error', errorHandler)
-		.pipe(gulp.dest('build/js'))
+		.pipe(gulp.dest('public/js'))
 });
 // Default Task
 gulp.task('default', ['scripts']);
